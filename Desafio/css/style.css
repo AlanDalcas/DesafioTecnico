@@ -1,0 +1,545 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+/* -- TOPO --*/
+
+.topo-responsivo{
+	display: none;
+}
+
+.topo-bar{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1%;
+}
+
+.topo-logo{
+	background-image: url('../img/identidade.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 70px;
+	position: relative;
+	cursor: pointer;
+}
+
+.topo-menu{
+	height: 50px;
+	padding: 13px;
+	position: relative;
+}
+
+.topo-menu li{
+	display: inline-block;	
+}
+
+.topo-button{
+	width: 160px;
+	height: 40px;
+	background: rgb(143,112,225);
+	background: linear-gradient(90deg, rgba(143,112,225,1) 0%, rgba(98,161,208,1) 44%, rgba(37,173,222,1) 100%);
+	border-radius: 40px;
+	cursor: pointer;
+}
+
+.topo-button:hover{
+	background: rgb(143,112,225);
+	background: linear-gradient(90deg, rgba(37,173,222,1) 0%, rgba(98,161,208,1) 44%, rgba(143,112,225,1) 100%);
+}
+
+.topo-button p{
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.topo-menu a{
+	color: #95989a;
+	text-decoration: none;
+	margin-left: 15px;
+	position: relative;
+	top: 5px;
+	transition: 0.5s;
+}
+
+.topo-menu a:hover{
+	color: #a65290;
+	transition: 0.5s;
+}
+
+/* -- TOPO --*/
+
+.topo-opcoes-responsivo{
+	display: none;
+}
+
+/*-- TOPO - BANNER -- */
+
+.banner-container{
+	width: 100%;
+	padding: 0 2%;
+}
+
+.banner-background{
+	background-image: url('../img/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0 auto;
+	max-width: 1100px;
+	height: 80vw;
+	max-height: 520px;
+	position: relative;
+}
+
+.banner-button-center{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	bottom: 0;
+	margin-bottom: 30px;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+
+.banner-topo-texto{
+	width: 75%;
+	float: right;
+	right: 20px;
+	position: relative;
+	top: 35px;
+	z-index: 0;
+}
+
+.banner-topo-texto h1{
+	color: white;
+	position: absolute;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+	white-space: pre;
+	font-size: 40px;
+}
+
+.banner-texto-dois{
+	right: 0;
+	top: 60px;
+}
+
+.banner-texto-tres{
+	right: 0;
+	top: 120px;
+}
+
+.banner-button-um{
+	width: 270px;
+	height: 70px;
+	background-color: white;
+	border-radius: 80px;
+	padding: 16px 0;
+	cursor: pointer;
+}
+
+.banner-button-um:hover{
+	background-color: rgba(255,255,255,0.9);
+}
+
+.banner-button-um h1{
+	text-align: center;
+	color: #a65290;
+}
+
+.banner-button-dois h1{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+.banner-button-dois{
+	width: 380px;
+	height: 70px;
+	border: 2px solid white;
+	border-radius: 80px;
+	margin-left: 2%;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.banner-button-dois:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+/*-- TOPO - BANNER -- */
+
+
+/*-- FORMULARIO -- */
+
+section.contato h2{
+	text-align: center;
+	color: #b4b4b4;
+}
+
+section.contato {
+	padding:60px 2%;	
+}
+
+section.contato form{
+	width: 100%;
+	max-width: 500px;
+	margin: 30px auto;
+
+}
+
+.form-wraper{
+	padding: 0 10px;
+	float: left;
+	margin-top: 10px;
+}
+
+.form-wraper input[type=text]{
+	width: 100%;
+	line-height: 30px;
+	height: 35px;
+	padding-left: 15px;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wraper input[type=email]{
+	width: 100%;
+	line-height: 30px;
+	height: 35px;
+	padding-left: 15px;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wraper input[type=tel]{
+	width: 100%;
+	line-height: 30px;
+	height: 35px;
+	padding-left: 15px;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wraper select{
+   -webkit-appearance: none;  
+   -moz-appearance: none; 
+	width: 100%;
+	line-height: 30px;
+	height: 35px;
+	padding-left: 15px;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+	font-family: 'Open Sans', sans-serif;
+	color: #b4b4b4;
+}
+
+.form-wraper option{
+	width: 100%;
+	line-height: 30px;
+	height: 35px;
+	padding-left: 15px;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+.form-wraper input[type=submit]{
+	width: 90px;	
+	height: 35px;	
+	margin-top: 8px;
+	border: 0;
+	cursor: pointer;
+	color: black;
+	display: inline-block;
+}
+
+.form-wraper textarea{
+	width: 100%;
+	height: 121px;
+	padding: 10px;
+	resize: none;
+	border: 1px solid #dadada;
+	margin-top: 8px;
+}
+
+
+.form-wraper span{
+	font-size: 15px;
+	color: #b4b4b4;
+}
+
+.w100{
+	width: 100%;
+}
+
+.w50{
+	width: 50%;
+}
+
+.container{
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+/*-- FORMULARIO -- */
+
+/*-- FOOTER -- */
+
+footer{
+	padding: 40px 2%;
+	background-color: #688293;
+}
+
+footer .footer-block{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+
+footer .footer-block h2{
+	color: white;
+	font-weight: normal;
+	font-size: 26px;
+}
+
+footer .footer-block p{
+	margin-top: 5px;
+	color: white;
+	font-size: 16px;
+}
+
+/*-- FOOTER -- */
+
+@media screen and (max-width: 888px){
+
+	.topo-button{
+		display: none;
+	}
+
+	.banner-topo-texto{
+		position: relative;
+	}
+
+	.topo-opcoes-responsivo{
+		display: none;
+		background-color: rgba(255,255,255,0.9);
+		float: left;
+		top: 0;
+		width: 100%;
+		padding: 5px 0;
+		position: absolute;
+		z-index: 2;
+	}
+
+	.topo-opcoes-responsivo a{
+		color: #95989a;
+		text-decoration: none;
+		margin-left: 15px;
+		position: relative;
+		transition: 0.5s;
+		font-size: 17px;
+		line-height: 28px;
+	}
+
+		.topo-opcoes-responsivo a:hover{
+		color: #a65290;
+		transition: 0.5s;
+	}
+
+	.topo-opcoes-responsivo li{
+		display: block;
+		list-style-type: none;
+		list-style: none;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.topo-opcoes-middle{
+		width: 200px;
+		margin: 0 auto;
+		position: relative;
+		left: 14px;
+	}
+
+	.banner-topo-texto{
+		width: 100%;
+		top: 0;
+		right: 0;
+		position: relative;
+	}
+
+	.banner-topo-texto h1{
+		position: static;
+		background-color: rgba(0,0,0,0.4);
+		white-space: normal;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.topo-bar{
+		justify-content:  space-between;			
+	}
+
+	.topo-menu{
+		display: none;
+	}
+
+	.topo-responsivo{
+		float: left;
+		height: 50px;
+		width: 50px;
+		position: relative;
+		background-image: url(../img/indice.png);
+		background-color: white;
+		background-position: center;
+		background-size: 140% 140%;
+		background-repeat: no-repeat;
+		display: inline-block;
+		cursor: pointer;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+
+	footer .footer-block{
+		float: none;
+		width: 100%;
+
+	}
+
+	footer .footer-block p{
+	margin-bottom: 10px;
+	}
+
+}
+
+@media screen and (max-width: 645px){
+
+	.banner-button-center{
+		width: 100%;
+		margin-bottom: 80px;
+		display:  block;
+		padding: 0 2%;
+	}
+
+	.banner-button-um{
+		width: 100%;
+		height: 60px;
+		cursor: pointer;
+		padding: 11px 0;
+	}
+
+	.banner-button-dois{
+		width: 100%;
+		height: 60px;
+		margin-top: 10px;
+		position: relative;
+		right: 2%;
+	    padding: 11px 0;
+	    cursor: pointer;
+	}
+
+
+}
+
+
+@media screen and (max-width: 568px){
+	.w50{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 550px){
+
+	.banner-background{
+		max-width: 1000px;
+		height: 100vw;
+	}
+
+	.banner-topo-texto h1{
+		font-size: 6vw;
+		word-wrap: break-word;
+
+	}
+
+	.topo-opcoes-responsivo a{
+		font-size: 15px;
+	}
+
+	.topo-opcoes-responsivo li{
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 390px){
+
+	.banner-button-dois h1{
+		font-size: 26px;
+	}
+
+	.banner-topo-texto{
+		top: 10px;
+	}
+
+	.banner-topo-texto{
+		position: relative;
+	}
+
+	.topo-opcoes-middle{
+		width: 200px;
+		margin: 0 auto;
+		position: relative;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 345px){
+
+	.banner-button-dois h1{
+		font-size: 23px;		
+	}
+
+	.banner-button-dois{
+		padding: 14px 0;
+	}
+}
+
+@media screen and (max-width: 290px){
+		.banner-button-dois h1{
+		font-size: 20px;		
+	}
+}
+
+@media screen and (max-width: 270px){
+		.banner-button-dois {
+		padding: 16px 0;		
+	}
+}
+
